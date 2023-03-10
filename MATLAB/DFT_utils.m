@@ -25,16 +25,6 @@ figure;plot(1:featdim, dft_loss);
 hold;
 plot(1:featdim, sort(dft_loss));
 
-% classwise = zeros(1, num_class);
-% for c = 1:num_class
-%     classwise(1, c) = sum(YTrain(:) == c);
-% end
-% %%
-% x = XTrain(:, 100);
-% y = YTrain(:,1);
-% feat_loss, all_loss = binning(x, y, classwise, 32, num_class);
-%         
-
 %%
 function [entropy] = cal_entropy_from_y(y_array, num_cls)
 
