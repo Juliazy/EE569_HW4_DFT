@@ -1,6 +1,6 @@
 import numpy as np
 from tqdm import tqdm
-from slm_loss_main._loss import PyLoss
+from Cython_slm_loss._loss import PyLoss
 
 def cal_entropy(prob, num_cls=10):
     prob_tmp = np.copy(prob)
